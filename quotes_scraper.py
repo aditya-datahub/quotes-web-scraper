@@ -2,6 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 import pandas as pd
 import time
+from datetime import datetime
 
 def scrape_quotes():
     base_url = "http://quotes.toscrape.com/page/{}/"
@@ -28,7 +29,8 @@ def scrape_quotes():
             all_data.append({
                 "Quote": text,
                 "Author": author,
-                "Tags": ", ".join(tags)
+                "Tags": ", ".join(tags),
+                "Scraped_At": datetime.now()   # 👈 NEW
             })
 
         print(f"Page {page} scraped ✅")
@@ -37,8 +39,11 @@ def scrape_quotes():
     df = pd.DataFrame(all_data)
     df.to_csv("quotes_data.csv", index=False)
 
-    print("All data saved successfully 🎉")
+    # log file update
+    with open("run_log.txt", "a") as f:
+        f.write(f"Run completed at {datetime.now()}\n")
 
+    print("Automation run completed 🤖")
 
 if __name__ == "__main__":
     scrape_quotes()
