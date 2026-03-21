@@ -1,17 +1,17 @@
 # 📌 Quotes Web Scraper
 
-> 🚀 A web scraping project that extracts quotes, authors, and tags from a multi-page website using Python.
+> 🚀 An automated web scraping project that extracts quotes, authors, and tags from a multi-page website using Python and runs on cloud using GitHub Actions.
 
 ---
 
 ## 📖 Project Overview
-This project collects data from a website and converts unstructured HTML into a clean, structured dataset.  
-It also tracks when the data is scraped using timestamps and maintains execution logs.
+This project extracts data from a website and transforms unstructured HTML into a clean, structured dataset.  
+The scraper is automated using GitHub Actions, allowing it to run on cloud without manual execution.
 
 ---
 
 ## 🛠️ Tech Stack
-**Python • BeautifulSoup • Pandas**
+**Python • BeautifulSoup • Pandas • GitHub Actions**
 
 ---
 
@@ -22,15 +22,26 @@ It also tracks when the data is scraped using timestamps and maintains execution
 - 🔹 Includes error handling  
 - 🔹 Adds timestamp for each record  
 - 🔹 Maintains execution logs  
+- 🔹 Automated execution using GitHub Actions 🤖  
+
+---
+
+## 🤖 Automation (GitHub Actions)
+This project uses GitHub Actions to automate scraping.
+
+- ⚡ Runs scraper on cloud (no local machine required)  
+- ▶️ Can be triggered manually from Actions tab  
+- 🔁 Can be extended to run on schedule (daily/weekly)  
+- 📊 Ensures consistent and repeatable data collection  
 
 ---
 
 ## ⏱️ Logging & Timestamp
-This project records the time at which data is scraped and maintains a log of each execution.
+This project records when the data is scraped and maintains execution logs.
 
 - 🕒 Adds a timestamp (`Scraped_At`) to each record  
 - 📝 Stores execution logs in `run_log.txt`  
-- 📊 Helps track when the data was collected  
+- 📊 Helps track data freshness and scraping history  
 
 ---
 
@@ -51,3 +62,27 @@ pip install -r requirements.txt
 ```
 python quotes_scraper.py
 ```
+
+---
+
+## ▶️ Run via GitHub Actions (Recommended)
+1. Go to **Actions** tab  
+2. Select **Run Quotes Scraper** workflow  
+3. Click **Run workflow**  
+
+👉 Script will execute on cloud and scrape data automatically  
+
+---
+
+## 💡 Future Improvements
+- 🔸 Schedule automated runs (daily scraping)  
+- 🔸 Store data in database (instead of CSV)  
+- 🔸 Build dashboard for data analysis (Power BI / Tableau)  
+
+---
+
+## 💯 What this project demonstrates
+- Web scraping fundamentals  
+- Data cleaning & structuring  
+- Automation using CI/CD tools  
+- Real-world data pipeline thinking  
