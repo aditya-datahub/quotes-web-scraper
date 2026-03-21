@@ -1,28 +1,43 @@
 # 📌 Quotes Web Scraper
 
-## 📖 Project Overview
-This project scrapes quotes, authors, and tags from a website using Python.
+> 🚀 A beginner-friendly web scraping project to extract quotes, authors, and tags using Python.
 
-## 🛠️ Tools Used
-Python | BeautifulSoup | Pandas
+---
+
+## 📖 Project Overview
+This project scrapes data from a multi-page website and converts unstructured HTML into a clean, structured dataset.
+
+---
+
+## 🛠️ Tech Stack
+**Python • BeautifulSoup • Pandas**
+
+---
 
 ## 🚀 Features
-- Multi-page scraping
-- Extracts quotes, authors, and tags
-- Saves data to CSV
-- Error handling included
+✨ Multi-page scraping  
+✨ Extracts quotes, authors, and tags  
+✨ Stores data in CSV format  
+✨ Includes basic error handling  
+
+---
 
 ## 📊 Output
-- quotes_data.csv
+📁 `quotes_data.csv` — Clean dataset containing:
+- Quote text  
+- Author name  
+- Tags  
+
+---
 
 ## ▶️ How to Run
-1. Install dependencies:
-   pip install requests beautifulsoup4 pandas
 
-2. Run script:
-   python quotes_scraper.py
+### 1️⃣ Install dependencies
+```
+pip install requests beautifulsoup4 pandas
+```
 
-## 💡 Learnings
-- Web scraping basics
-- HTML parsing
-- Data cleaning and storage
+### 2️⃣ Run the script
+```
+python quotes_scraper.py
+```
