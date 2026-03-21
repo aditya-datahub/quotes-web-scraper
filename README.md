@@ -52,7 +52,7 @@ This project supports automation using system schedulers (e.g., Task Scheduler o
 pip install -r requirements.txt
 ```
 
-2️⃣ Run the script
+### 2️⃣ Run the script
 ```
 python quotes_scraper.py
 ```
