@@ -1,12 +1,12 @@
 # 📌 Quotes Web Scraper
 
-> 🚀 An automated web scraping project that extracts quotes, authors, and tags from a multi-page website using Python.
+> 🚀 A web scraping project that extracts quotes, authors, and tags from a multi-page website using Python.
 
 ---
 
 ## 📖 Project Overview
 This project collects data from a website and converts unstructured HTML into a clean, structured dataset.  
-It also simulates a **real-world data pipeline** by automating the scraping process.
+It also tracks when the data is scraped using timestamps and maintains execution logs.
 
 ---
 
@@ -16,39 +16,34 @@ It also simulates a **real-world data pipeline** by automating the scraping proc
 ---
 
 ## 🚀 Features
-✨ Multi-page web scraping  
-✨ Extracts quotes, authors, and tags  
-✨ Stores data in CSV format  
-✨ Includes error handling  
-✨ Adds timestamp for each record  
-✨ Maintains execution logs  
+- 🔹 Multi-page web scraping  
+- 🔹 Extracts quotes, authors, and tags  
+- 🔹 Stores data in CSV format  
+- 🔹 Includes error handling  
+- 🔹 Adds timestamp for each record  
+- 🔹 Maintains execution logs  
 
 ---
 
-## 🤖 Automation
-This project supports automation using system schedulers (e.g., Task Scheduler or Cron Jobs).
+## ⏱️ Logging & Timestamp
+This project records the time at which data is scraped and maintains a log of each execution.
 
-- Runs automatically at scheduled intervals  
-- Updates dataset without manual execution  
-- Logs each run in `run_log.txt`  
+- 🕒 Adds a timestamp (`Scraped_At`) to each record  
+- 📝 Stores execution logs in `run_log.txt`  
+- 📊 Helps track when the data was collected  
 
 ---
 
 ## 📊 Output
-📁 `quotes_data.csv` — Contains:
-- Quote text  
-- Author name  
-- Tags  
-- Scraped timestamp  
-
-📁 `run_log.txt` — Tracks each automated run  
+- 📁 `quotes_data.csv` → Contains scraped data (quotes, authors, tags, timestamp)  
+- 📁 `run_log.txt` → Tracks script execution history  
 
 ---
 
 ## ▶️ How to Run
 
 ### 1️⃣ Install dependencies
-```bash
+```
 pip install -r requirements.txt
 ```
 
