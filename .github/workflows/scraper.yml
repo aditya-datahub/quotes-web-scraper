@@ -2,7 +2,7 @@ name: Run Quotes Scraper
 
 on:
   schedule:
-    - cron: "0 10 * * 1"   # weekly Monday 10 AM UTC
+   - cron: "0 10 1 * *"   # monthly, 1st of every month 10 AM UTC
   workflow_dispatch:
 
 permissions:
